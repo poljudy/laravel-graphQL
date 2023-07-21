@@ -10,7 +10,7 @@
 ## Installation
 1. Clone the repository
 ```
-git clone https://github.com/vikas-ukani/Laravel8-With-GraphQL-APIs.git
+git clone https://github.com/poljudy/laravel-graphQL.git
 ```
 
 2. Run composer install to install composer packages.
@@ -29,7 +29,7 @@ git clone https://github.com/vikas-ukani/Laravel8-With-GraphQL-APIs.git
 
 1. Clone the repository
 ```
-git clone https://github.com/vikas-ukani/Laravel8-With-GraphQL-APIs.git
+git clone https://github.com/poljudy/laravel-graphQL.git
 ```
 2. Build the containers
 ```
@@ -63,7 +63,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
    
 ## Contributing
 
-Contributions, Developer Discussions, and Any Valuable Feedback are most welcome. [Make your CONTRIBUTING](https://github.com/vikas-ukani/Laravel8-With-GraphQL-APIs/blob/main/CONTRIBUTING.md).
+Contributions, Developer Discussions, and Any Valuable Feedback are most welcome. [Make your CONTRIBUTING](https://github.com/poljudy/laravel-graphQL/blob/main/CONTRIBUTING.md).
 
 ## Code of Conduct
 
