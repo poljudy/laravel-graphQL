@@ -39,10 +39,11 @@ class UpdateSkillMutation extends Mutation
         $with = $fields->getRelations();
 
         $skill = Skill::find($args['id']);
-        if (!$skill) return null;
+        if (!$skill)
+            return null;
 
         $skill->skill_title = $args['skill_title'];
-        $skill->save(); 
+        $skill->save();
         return $skill;
     }
 }

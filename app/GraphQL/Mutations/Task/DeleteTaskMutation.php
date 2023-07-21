@@ -38,6 +38,6 @@ class DeleteTaskMutation extends Mutation
         if ($task->user_id != auth()->id()) {
             abort(403, 'You are not authorized to preform this action');
         }
-        return  $task->delete() ? true : false;
+        return $task->delete() ? true : false;
     }
 }
