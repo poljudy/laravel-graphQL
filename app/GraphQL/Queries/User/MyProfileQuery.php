@@ -25,7 +25,7 @@ class MyProfileQuery extends Query
 
     public function authorize($root, array $args, $ctx, ResolveInfo $resolveInfo = null, Closure $getSelectFields = null): bool
     {
-        return ! Auth::guest();
+        return !Auth::guest();
     }
 
     public function type(): Type

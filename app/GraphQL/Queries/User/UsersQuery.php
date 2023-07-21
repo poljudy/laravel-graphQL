@@ -16,8 +16,8 @@ use Rebing\GraphQL\Support\SelectFields;
 class UsersQuery extends Query
 {
     protected $attributes = [
-        'name'          => 'Users query',
-        'description'   => 'A query of users'
+        'name' => 'Users query',
+        'description' => 'A query of users'
     ];
 
     public function type(): Type

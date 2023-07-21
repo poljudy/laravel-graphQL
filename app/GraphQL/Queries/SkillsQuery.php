@@ -16,8 +16,8 @@ use Rebing\GraphQL\Support\Facades\GraphQL;
 class SkillsQuery extends Query
 {
     protected $attributes = [
-        'name'          => 'skills query',
-        'description'   => 'A query of skills'
+        'name' => 'skills query',
+        'description' => 'A query of skills'
     ];
 
     public function type(): Type
@@ -41,9 +41,9 @@ class SkillsQuery extends Query
     public function resolve($root, $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)
     {
         /** @var SelectFields $fields */
-        $fields     = $getSelectFields();
-        $select     = $fields->getSelect();
-        $with       = $fields->getRelations();
+        $fields = $getSelectFields();
+        $select = $fields->getSelect();
+        $with = $fields->getRelations();
 
         $where = function ($query) use ($args) {
             if (isset($args['id'])) {

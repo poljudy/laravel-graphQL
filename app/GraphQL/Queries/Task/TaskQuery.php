@@ -15,14 +15,14 @@ use Rebing\GraphQL\Support\Query;
 class TaskQuery extends Query
 {
     protected $attributes = [
-        'name'          => 'Task query',
-        'description'   => 'A query of task'
+        'name' => 'Task query',
+        'description' => 'A query of task'
     ];
 
     public function authorize($root, array $args, $ctx, ResolveInfo $resolveInfo = null, Closure $getSelectFields = null): bool
     {
         // true, if logged in
-        return ! Auth::guest();
+        return !Auth::guest();
     }
 
     public function type(): Type
@@ -41,6 +41,6 @@ class TaskQuery extends Query
 
     public function resolve($root, $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)
     {
-      return auth()->user()->tasks;
+        return auth()->user()->tasks;
     }
 }
