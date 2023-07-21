@@ -20,9 +20,9 @@ class RegisterUserMutation extends Mutation
         return GraphQL::type('register');
     }
     /*  public function type(): Type
-      {
-          return GraphQL::type('user');
-      }*/
+    {
+    return GraphQL::type('user');
+    }*/
 
     public function args(): array
     {
