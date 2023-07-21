@@ -62,7 +62,8 @@ class GraphQLSchema
             'login' => [
                 'query' => [],
                 'mutation' => [
-                    'login' => LoginUserMutation::class, // WORKING - Reference `graphql-schemas.md`
+                    'login' => LoginUserMutation::class,
+                    // WORKING - Reference `graphql-schemas.md`
                 ],
                 'types' => [
                     'login' => LoginType::class,
