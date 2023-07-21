@@ -18,10 +18,13 @@ class LoginController extends Controller
             'email' => 'required|email',
             'password' => 'required',
         ]);
-        if ($validator->fails()) return response()->json($validator->errors());
+        if ($validator->fails())
+            return response()->json($validator->errors());
 
-        $user = User::where('email', $request->only('email'))->first();;
-        if (!$user) return response()->json("User not found");
+        $user = User::where('email', $request->only('email'))->first();
+        ;
+        if (!$user)
+            return response()->json("User not found");
         return $user->createToken('token-name', ['server:update'])->plainTextToken;
     }
 }
