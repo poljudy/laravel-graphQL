@@ -4,7 +4,7 @@ Name: Login GraphQL
 URL: http://localhost:8000/graphiql/login
 Schema: 
 mutation login {
-  login(email: "tina59@example.net", password: "password") {
+  login(email: "example@example.net", password: "password") {
     id
     name
     email
@@ -23,7 +23,7 @@ Name: Register GraphQL
 URL: http://localhost:8000/graphiql/register
 Schema: 
 mutation register {
-  register(name:"Vikas", email:"vikas@mail.com", password:"password" ){
+  register(name:"name", email:"email@mail.com", password:"password" ){
     id, name, email, token
   }
 }
@@ -63,7 +63,7 @@ mutation updateSkill {
 }
 
 mutation register{
-    register(name: "jelenavuc" , email: "jelenavuc@gmail.com", password: "12345678") {
+    register(name: "name" , email: "email@gmail.com", password: "12345678") {
         id, name, email
     }
 }
