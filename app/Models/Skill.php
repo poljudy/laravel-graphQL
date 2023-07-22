@@ -9,8 +9,8 @@ class Skill extends Model
 {
     use HasFactory;
 
-    protected $table  = 'skills';
-    
+    protected $table = 'skills';
+
     /**
      * The attributes that are mass assignable.
      *
